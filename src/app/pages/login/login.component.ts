@@ -5,16 +5,17 @@ import { FormsModule } from '@angular/forms';
 import { LoginServiceService } from '../../services/login.service.service';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { HeaderComponent } from '../../components/header/header.component';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule,FormsModule],
+  imports: [CommonModule,FormsModule,HeaderComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-  logoUrl = LOGO_URL
+
   bgUrl = BG_IMG_URL
 
   email!:string;
@@ -37,7 +38,7 @@ export class LoginComponent {
       return
     }
     this.loginService.login(this.email,this.password)
-    this.toasterService.success('logged in sucessfully')
+    this.toasterService.success('logged in sucessfully') 
     this.router.navigateByUrl('/browse')
     console.log('login details entered correctly',this.email,this.password)
   }

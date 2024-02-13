@@ -4,8 +4,8 @@ export const LOGO_URL =
 export const BG_IMG_URL =
   'https://assets.nflxext.com/ffe/siteui/vlv3/a09bb938-2d90-42ae-986e-5a3e4abf9e77/8eb1e781-3494-4aa4-9405-268ca6473e4c/IN-en-20231113-popsignuptwoweeks-perspective_alpha_website_large.jpg';
 
-// export const tmdbConfig = {
-//   imagePath: 'https://image.tmdb.org/t/p/w500/',
-//   apiKey: 'youappkey',
-//   accessToken: 'youraccesstoken',
-// };
+export const tmdbConfig = {
+  imagePath: 'https://image.tmdb.org/t/p/w500/',
+  APIkey: "70de543f6c6447a66084595a174d8781",
+  accessToken: "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MGRlNTQzZjZjNjQ0N2E2NjA4NDU5NWExNzRkODc4MSIsInN1YiI6IjY1YzYwMDg0OGUyMGM1MDE3ZDMzYmUyZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.o_hixtW-RJ7CEZ8lSJa-fCzzI3KHQRjvBPvTFyc_FTU",
+};
